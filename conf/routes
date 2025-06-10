@@ -25,3 +25,6 @@ GET     /captcha                                Application.captcha
 
 # Tag route
 GET     /posts/{tag}                    Application.listTagged
+
+# Import CRUD routes
+*      /admin              module:crud
