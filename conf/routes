@@ -19,3 +19,6 @@ GET     /posts/{id}                             Application.show
 
 # Comments on certain posts
 POST    /posts/{postId}/comments                Application.postComment
+
+# Captcha route
+GET     /captcha                                Application.captcha
