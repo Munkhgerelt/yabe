@@ -13,3 +13,9 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+# Gets only specific post by id
+GET     /posts/{id}                             Application.show
+
+# Comments on certain posts
+POST    /posts/{postId}/comments                Application.postComment
