@@ -7,7 +7,7 @@
             href="@{'/public/stylesheets/main.css'}" />
         <link rel="shortcut icon" type="image/png"
             href="@{'/public/images/favicon.png'}" />
-        <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>>
+        <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
     </head>
     <body>
         
@@ -15,11 +15,11 @@
             <div id="logo">
                 yabe.
             </div>
-            <ul id="tools">
-                <li>
-                    <a href="#">Log in to write something</a>
-                </li>
-            </ul>
+        <ul id="tools">
+            <li>
+                <a href="@{Admin.index()}">Log in to write something</a>
+            </li>
+        </ul>
             <div id="title">
                 <span class="about">About this blog</span>
                 <h1><a href="@{Application.index()}">${blogTitle}</a></h1>
