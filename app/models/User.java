@@ -3,6 +3,7 @@ package models;
 import java.util.*;
 import javax.persistence.*;
 
+import org.hibernate.annotations.Type;
 import play.db.jpa.*;
 import play.data.validation.*;
 
@@ -17,7 +18,9 @@ public class User extends Model {
   public String password;
     
   public String fullName;
-  public boolean isAdmin;
+  @Type(type = "org.hibernate.type.NumericBooleanType")
+  @Column(columnDefinition = "BIT")
+  public boolean isAdmin = false;
 
   public User(String email, String password, String fullName) {
     this.email = email;
